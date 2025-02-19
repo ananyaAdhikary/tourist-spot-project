@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+      }
+      table {
+        margin: auto;
+        width: 50%;
+      }
+      p {
+        font-size: 18px;
+        text-align: justify;
+        
+      }
+      header {
+        font-size: 20px;
+        background-color: burlywood;
+        padding: 30px;
+        margin: auto;
+        text-align: center;
+      }
+      nav {
+        width: 15%;
+        min-width: fit-content;
+        height: 100em;
+        background-color: aliceblue;
+        padding: 20px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0%;
+      }
+
+      nav ul li {
+        width: 100%;
+        min-width: max-content;
+        background-color: rgb(174, 240, 240);
+        padding: 5%;
+        margin: 0;
+      }
+      nav ul li a {
+        text-decoration: none;
+      }
+
+      #main {
+        width: 75%;
+        margin-left: 5px;
+        padding: 5%;
+        text-wrap: wrap;
+      }
+      #did {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        justify-content: space-between;
+      }
+
+      .form-color {
+        background: rgba(133, 255, 253, 0.25);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 10px;
+      }
+
+      .div-cont {
+        width: 33%;
+        height: 10%;
+        margin: 3%;
+        padding: 2%;
+        text-align: justify;
+        background-color: azure;
+      }
+
+      footer {
+        display: flex;
+        width: 100%;
+        background-color: burlywood;
+      }
+      .footer {
+        padding: 10px;
+        margin: 0 auto;
+      }
+      .full-content {
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2>Tourist Spot</h2>
+    </header>
+    <div class="full-content">
+      <nav>
+        <ul>
+          <li><a href="#introid">Introduction</a></li>
+          <br />
+          <li><a href="#listofplaces">List of places</a></li>
+          <br />
+          <li><a href="#did">Images</a></li>
+          <br />
+          <li><a href="#voteid">Vote</a></li>
+          <br />
+        </ul>
+      </nav>
+      <div id="main">
+        <div id="introid">
+          <p>
+            Tourist spots are locations that have unique qualities or
+            characteristics that set them apart and make them desirable
+            destinations. A wide variety of locations are included in the
+            category of tourist spots, such as natural wonders, historical and
+            cultural sites, architectural wonders, recreational areas, and
+            entertainment places.Some popular tourist spots in Bangladesh are:
+          </p>
+        </div>
+        <br /><br />
+        <table id="listofplaces">
+          <tr style="background-color: azure">
+            <th>Tourist Spot</th>
+            <th>Location</th>
+          </tr>
+          <tr>
+            <td>Cox's bazar</td>
+            <td>Chittagong</td>
+          </tr>
+          <tr>
+            <td>Ratargul Swamp Forest</td>
+            <td>Sylhet</td>
+          </tr>
+          <tr>
+            <td>Lalbagh Fort</td>
+            <td>Dhaka</td>
+          </tr>
+        </table>
+        <br />
+        <p>Picture of some beautiful places is given below:</p>
+        <div id="did">
+          <div class="div-cont">
+            <img
+              src="images/imagecox's.png"
+              alt="Cox's Bazar"
+              height="200"
+              width="100%"
+            /><br />
+            <p>Cox's Bazar</p>
+          </div>
+          <div class="div-cont">
+            <img
+              src="images/imagelalbagh.png"
+              alt="Lalbagh Fort"
+              height="200"
+              width="100%"
+            /><br />
+            <p>Lalbagh Fort</p>
+          </div>
+          <div class="div-cont">
+            <img
+              src="images/imagesajek.png"
+              alt="Sajek"
+              height="200"
+              width="100%"
+            /><br />
+            <p>Sajek Valley</p>
+          </div>
+        </div>
+
+        <h2 style="text-align: center">Vote your favourite place</h2>
+
+        <form
+          action="newpage.html"
+          class="form-color"
+          target="_blank"
+          id="voteid"
+        >
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" /><br /><br />
+
+          <label for="fvrtspot">Which place is your most favourite:</label
+          ><br />
+
+          <input type="radio" id="coxs" name="f_s" value="Cox's-Bazar" />
+          <label for="Cox's-Bazar">Cox's-Bazar</label><br />
+
+          <input type="radio" id="sajek" name="f_s" value="Sajek-Valley" />
+          <label for="Sajek-Valley">Sajek-Valley</label><br />
+
+          <input type="radio" id="lalbagh" name="f_s" value="Lalbagh-Valley" />
+          <label for="Lalbagh-Valley">Lalbagh-Valley</label><br /><br />
+
+          <input type="submit" value="Submit" style="text-align: center" />
+        </form>
+        <br />
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>
+          Long Live Travelers!<br />
+          <a
+            href="https://www.thrillophilia.com/destinations/bangladesh/places-to-visit"
+            alt="browse google to find out tourist spot"
+            >Find out more interesting places</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
